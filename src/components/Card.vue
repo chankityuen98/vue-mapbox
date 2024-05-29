@@ -1,11 +1,11 @@
 <template>
-  <div class="flex flex-row gap-x-4 items-center px-3 py-6 bg-gray-200 max-w-52 rounded-lg">
+  <div class="flex flex-row gap-x-4 items-center px-3 py-6 bg-white max-w-52 rounded-lg">
     <div class="bg-blue-300 p-2 rounded-full">
-      <Icon :icon="icon" class="text-blue-500 text-2xl" />
+      <Icon :icon="props.icon" class="text-blue-500 text-2xl" />
     </div>
     <div class="flex flex-col">
-      <p>{{ amount }}</p>
-      <p class="text-gray-500">{{ description }}</p>
+      <p>{{ props.amount }}</p>
+      <p class="text-gray-500">{{ props.description }}</p>
     </div>
   </div>
 </template>
