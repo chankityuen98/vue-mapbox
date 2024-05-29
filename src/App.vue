@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import CardVue from './components/Card.vue'
+</script>
 
 <template>
   <header>
@@ -10,7 +12,7 @@
   </header>
 
   <main>
-    <TheWelcome />
+    <CardVue icon="teenyicons:tick-circle-outline" amount="150" description="Testing description" />
   </main>
 </template>
 
